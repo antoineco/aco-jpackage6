@@ -1,0 +1,11 @@
+{
+  "author": "Antoine Cotten",
+  "license": "Apache License, Version 2.0",
+  "name": "aco-jpackage6",
+  "project_page": "https://github.com/tOnI0/aco-jpackage6",
+  "source": "git://github.com/tOnI0/aco-jpackage6.git",
+  "summary": "Puppet module for JPackage 6 YUM repository",
+  "version": "1.0.0",
+  "tags": ["yum","jpackage","java","fedora","rhel"],
+  "dependencies": []
+}
