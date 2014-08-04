@@ -1,23 +1,23 @@
-# === Define jpackage6::rpm_gpg_key
+# == Define jpackage6::rpm_gpg_key
 #
-# == Parameters
+# === Parameters:
 #
-# $path:
+# [*path*]
 #   path of the RPM GPG key to import
 #
 # === Actions:
 #
-# - Import a RPM gpg key
+# * Import a RPM gpg key
 #
-# === Requires
+# === Requires:
 #
 # (none)
 #
 # === Sample Usage:
 #
-# jpackage::rpm_gpg_key{ "JPackage 6":
-#   path => "/etc/pki/rpm-gpg/RPM-GPG-KEY-jpackage"
-#}
+#  jpackage6::rpm_gpg_key{ 'JPackage 6':
+#    path => "/etc/pki/rpm-gpg/RPM-GPG-KEY-jpackage"
+#  }
 #
 define jpackage6::rpm_gpg_key ($path) {
   # Given the path to a key, see if it is imported, if not, import it

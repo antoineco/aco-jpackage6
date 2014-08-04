@@ -1,33 +1,33 @@
-# === Class: jpackage6
+# == Class: jpackage6
 #
 # This module installs the JPackage 6.0 YUM repository and its dependencies on RHEL-variants
 #
-# == Parameters
+# === Parameters:
 #
-# $gpgcheck:
+# [*gpgcheck*]
 #   enable or disable GPG signature check (valid: '0'|'1')
-# $enable_free:
+# [*enable_free*]
 #   enable or disable free repository (valid: '0'|'1')
-# $enable_devel:
+# [*enable_devel*]
 #   enable or disable devel repository (valid: '0'|'1')
-# $enable_nonfree:
+# [*enable_nonfree*]
 #   enable or disable non-free repository (valid: '0'|'1')
 #
-# === Actions
+# === Actions:
 #
-# - Install JPackage YUM repository
-# - Install YUM plugin 'priorities'
+# * Install JPackage YUM repository
+# * Install YUM plugin 'priorities'
 #
-# === Requires
+# === Requires:
 #
 # (none)
 #
 # === Sample Usage:
 #
-# class { '::jpackage':
-#   gpgcheck     => '0',
-#   enable_devel => '1'
-# }
+#  class { '::jpackage':
+#    gpgcheck     => '0',
+#    enable_devel => '1'
+#  }
 #
 class jpackage6 ($gpgcheck = 1, $enable_free = 1, $enable_devel = 0, $enable_nonfree = 0) {
   case $::osfamily {
